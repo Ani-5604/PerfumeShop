@@ -1,0 +1,27 @@
+.collections-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .collection-product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .collection-product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .collection-product-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .collection-product-price {
+    font-size: 16px;
+    color: #555;
+  }
+  

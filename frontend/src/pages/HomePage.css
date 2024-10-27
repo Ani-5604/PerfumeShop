@@ -1,0 +1,169 @@
+.homepage {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.banner {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f4e3;
+    color: #333;
+}
+
+.banner h2 {
+    font-size: 2rem;
+}
+
+.banner button {
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.product-card {
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+/* HomePage.css */
+.products-section {
+    padding: 50px;
+    background-color: #f8f8f8;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .products-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+  .products-section {
+    padding: 50px;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #000000;
+    transition: 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #ff6f61;
+    padding: 10px 20px;
+  }
+  
+  .product-page {
+    padding: 50px;
+  }
+  
+  .product-gallery img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .reviews-section {
+    margin-top: 30px;
+  }
+  
+  .share-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }/* HomePage.css */
+
+.products-section {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for the section */
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between the cards */
+}
+
+.products-grid p {
+    text-align: center; /* Center text for the no products message */
+    font-size: 1.2em;
+}
+
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  .product-image-container {
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    position: relative; /* Ensure proper positioning */
+  }
+  
+  .product-image {
+    width: 100%; /* Make sure images fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+/* HomePage.css */

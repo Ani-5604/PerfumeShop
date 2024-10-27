@@ -1,0 +1,54 @@
+/* src/components/Signup.css */
+.signup-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .signup-button,
+  .google-signin-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .signup-button {
+    background-color: #007bff; /* Blue color for sign-up button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .google-signin-button {
+    background-color: #db4437; /* Google red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Styles for the separator */
+  .or-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .or-container hr {
+    flex-grow: 1;
+    border: 1px solid #ccc; /* Line color */
+  }
+  
+  .or-text {
+    margin: 0 10px; /* Spacing around "or" text */
+    font-weight: bold; /* Optional: Make text bold */
+    color: #666; /* Text color */
+  }
+  

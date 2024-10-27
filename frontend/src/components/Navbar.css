@@ -1,0 +1,274 @@
+/* Main Navbar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Title and Logo */
+.title-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.shop-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f0c14b, #ff6f00, #f06c64);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+}
+
+.shop-logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* Navigation Buttons */
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0c14b;
+  color: #111;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #e0b349;
+  color: #fff;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: #222; /* Darker background for better contrast */
+  color: #fff; /* Lighter text for readability */
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Gap between menu items */
+}
+
+.dropdown-menu li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px; /* Increased padding for better spacing */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.1rem;
+}
+
+.dropdown-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
+  transform: scale(1.05); /* Slight scale effect for interaction */
+}
+
+.dropdown-menu li a {
+  color: #f0c14b; /* Light golden color for readable links */
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 12px;
+  flex: 1;
+  display: flex;
+  align-items: center; /* Center icon and text vertically */
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #f0c14b; /* Matches link color for consistency */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.dropdown-menu li:hover a {
+  color: #000000; /* Change text color on hover */
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ff6f00;
+  box-shadow: 0px 0px 5px rgba(255, 111, 0, 0.5);
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #e05d00;
+}
+
+/* Login Button */
+.login-button {
+  padding: 10px 20px;
+  background-color: #f0c14b;
+  color: #111;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #e0b349;
+}
+/* Signup Container */
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0c14b, #ff6f00);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Signup Title */
+.signup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Form Icon */
+.form-icon {
+  font-size: 1.5rem;
+  color: #ffdd00; /* Match with the theme */
+  margin-right: 10px;
+}
+
+/* Input Styles */
+.form-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 5px rgba(255, 111, 0, 0.5);
+}
+
+/* Signup Button */
+.signup-button {
+  padding: 12px;
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+  background-color: #e05d00;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer Link */
+.signup-footer {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.login-link {
+  color: #ffdd00; /* Golden link color */
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
